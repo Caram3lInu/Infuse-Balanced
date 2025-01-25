@@ -2,7 +2,8 @@
 #
 # --------------------------------------------------------------------- #
 #
-#                   Infuse Skript Made By Spork3r
+#                Original Infuse Skript Made By Spork3r
+#                    Slightly Tweaked by Gwavity
 #          Infuse SMP Plugin Revamped Plugin is by Infuse Team
 #               So shout outs to them for the plugin
 #
@@ -17,7 +18,7 @@ function Spork3rInfusePrimaryThunderSpark(p: player):
     set {Spork3r::Infuse::Primary::Active::%{_p}'s uuid%} to true
     set {Spork3r::Infuse::Primary::Seconds::%{_p}'s uuid%} to 10
     set {Spork3r::Infuse::Primary::Minutes::%{_p}'s uuid%} to 0
-    loop 10 times:
+    loop 7 times:
         loop all entities within 16 blocks around {_p}:
             if loop-entity is not {_p}:
                 if {Spork3r::Infuse::TrustList::%{_p}'s uuid%::%loop-entity's uuid%} is not true:
