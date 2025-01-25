@@ -16,7 +16,7 @@
 on damage of player:
     if {Spork3r::Infuse::Support::%victim's uuid%} is 2:
         if victim is on fire:
-            cancel event
+            reduce damage by (damage * 0.2)
             if {Spork3r::Infuse::Support::Fire::Spark::%victim's uuid%} is true:
                 apply regeneration 1 without particles whilst hiding the potion icon to victim for 2 seconds replacing the existing effect
             set {Spork3r::Infuse::Support::fire::AttackDamageRev::%victim's uuid%} to true
